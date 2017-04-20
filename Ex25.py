@@ -5,12 +5,12 @@ def break_into_words(sentence):
 
 def first_word(words):
     "This will return first word"
-    first_word = words[0]
+    first_word = words[0] #words.pop(0)
     return first_word
 
 def last_word(words):
     "this will return the last word"
-    last_word = words[-1]
+    last_word = words[-1] #words.pop(-1)
     return last_word
 
 def sort_words(words):
