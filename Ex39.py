@@ -35,7 +35,7 @@ print "Michigan's abbreviation is:", states["Michigan"]
 print '-'*10
 
 for state, abbrev in states.items():
-    print cities[abbrev]
+    print "%s state is abbreviated as %s and it has city %s" %(state, abbrev, cities[abbrev])
    # print state
    # print abbrev
 
@@ -48,4 +48,4 @@ state_name = states.get('Texas', None)
 
 if not state_name:
     print "\nSorry, No Texas"
-
+print "Texas state has city: %s" %state_name
