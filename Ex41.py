@@ -37,17 +37,17 @@ if len(sys.argv) == 2 and sys.argv[1] == 'english':
 def convert(snippet, phrase):
     class_names = [w.capitalize() for w in
                    random.sample(words, snippet.count("%%%"))]
-    print class_names
-    print snippet.count("***")
+    # print class_names
+    # print snippet.count("***")
     other_names = random.sample(words, snippet.count("***"))
-    print other_names
+    # print other_names
     results = []
     param_names = []
-    print snippet.count("@@@")
+    # print snippet.count("@@@")
     for i in range(0, snippet.count("@@@")):
-        print i
+        # print i
         param_count = random.randint(1,3)
-        print "param_count value is", param_count
+        # print "param_count value is", param_count
         param_names.append(', '.join(random.sample(words, param_count)))
 
     for sentence in snippet, phrase:
